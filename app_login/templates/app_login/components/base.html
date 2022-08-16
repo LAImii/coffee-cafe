@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee Cafe - {% block title %}{% endblock %}</title>
+    <link rel="icon" href="{% static 'app_login/fav.ico' %}">
+    <link rel="stylesheet" href="{% static 'app_login/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'app_login/main.css' %}">
+</head>
+<body>
+    {% include 'app_login/components/header.html' %}
+    {% block content %}{% endblock %}
+    {% include 'app_login/components/footer.html' %}
+</body>
+</html>

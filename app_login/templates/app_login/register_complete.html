@@ -1,0 +1,16 @@
+{% extends 'app_login/components/base.html' %}
+
+{% block title %}COMPLETE{% endblock %}
+
+{% block content %}
+<h1 class="coffee-cafe">coffee Cafe</h1>
+<section class="content-section content-section-single">
+    <div class="content-container content-container-narrow">
+        <h2 class="coffee-title">Registration completed successfully</h2>
+        <a class="button" href="{% url 'login' %}">Login</a>
+        <p>
+            <a class="alternative-to-home" href="{% url 'home' %}">- Return to home page -</a>
+        </p>
+    </div>
+</section>
+{% endblock %}

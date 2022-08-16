@@ -1,0 +1,29 @@
+{% load static %}
+
+<header class="header">
+    <div class="header-brand">
+        <a class="header-logo" href="{% url 'home' %}">
+            <img src="{% static 'app_login/logo.png' %} ">
+        </a>
+        
+        {% if user.is_authenticated %}
+        <span class="header-name">Hello, {{ request.user }}</span>
+        {% else %}
+        <span></span>
+        {% endif %}
+    </div>
+    
+    <div class="header-menu">
+        <a class="header-item" href="{% url 'home' %}">HOME</a>
+        <a class="header-item" href="#">ABOUT</a>
+        <a class="header-item" href="#">MENU</a>
+        <a class="header-item" href="#">BLOG</a>
+        <a class="header-item" href="#">CONTACT</a>
+        
+        {% if user.is_authenticated %}
+        <a class="header-login" href="{% url 'logout' %}">LOGOUT</a>
+        {% else %}
+        <a class="header-login" href="{% url 'login' %}">LOGIN</a>
+        {% endif %}
+    </div>
+</header>

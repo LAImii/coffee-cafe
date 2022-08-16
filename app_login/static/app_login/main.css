@@ -1,0 +1,287 @@
+/* font */
+/* give-you-glory-regular - latin */
+@font-face {
+  font-family: 'Give You Glory';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('fonts/give-you-glory-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/give-you-glory-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* fredericka-the-great-regular - latin */
+@font-face {
+    font-family: 'Fredericka the Great';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('fonts/fredericka-the-great-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/fredericka-the-great-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* Global */
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html {
+    color: #FBD5FC;
+    font-family: 'Give You Glory', sans-serif;
+    font-weight: 300;
+    background-color: #304151;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #EBFF00;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+    color: #FBD5FC;
+}
+
+/* Screen */
+.content-section {
+    padding: 64px 16px;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content-container-narrow {
+    max-width: 600px;
+}
+
+.content-section-single {
+    min-height: calc(100vh - 120px);
+}
+
+/* Title */
+.coffee-cafe {
+    color: #FBD5FC;
+    font-family: 'Fredericka the Great', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    letter-spacing: -7px;
+}
+
+.coffee-title {
+    font-size: 50px;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    background-color: #304151;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-item {
+    font-weight: 400;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    transition: color 300ms;
+}
+
+.header-item:hover {
+    font-weight: 1000;
+    color: #EBFF00;
+    text-shadow: 0 0 5px #EBFF00;
+}
+
+.header-login {
+    font-weight: 1000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    transition: color 300ms;
+    color: #EBFF00;
+    text-shadow: 0 0 5px #EBFF00;
+}
+
+.header-login:hover {
+    color: #FBD5FC;
+    font-weight: 400;
+    text-shadow: none;
+}
+
+.header-logo img {
+    float: left;
+    height: 72px;
+    padding: 5px;
+}
+
+.header-name {
+    float: left;
+    font-weight: 1000;
+    font-size: 24px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color: #EBFF00;
+    text-shadow: 0 0 5px #EBFF00;
+    padding-left: 16px;
+}
+
+/* Footer */
+.footer {
+    background-color: #304151;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-copyright {
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+/* Home */
+.homepage {
+    background-color: #30415134;
+    background-image: url('homepage.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 990px;
+}
+
+/* Form */
+.coffee-form-field {
+    margin-bottom: 16px;
+    padding-left: 180px;
+}
+
+label {
+    display: block;
+    line-height: 1.6;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #283644;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    display: block;
+    width: 60%;
+    height: 32px;
+    padding: 4px 8px 0px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border: 1px solid #EBFF00;
+}
+
+input[type="text"]:enabled,
+input[type="email"]:enabled,
+input[type="password"]:enabled {
+    color: #FBD5FC;
+    font-weight: 400;
+}
+
+/* button */
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    color: #304151;
+    font-size: 18px;
+    background-color: #FBD5FC;
+    border: none;
+    border-radius: 10px;
+    font-weight: 1000;
+    /* line-height: 2; */
+    transition: color 300ms;
+    padding: 10px 18px 5px 18px;
+    margin-left: 260px;
+}
+
+.button:hover {
+    color: #EBFF00;
+    text-shadow: 0 0 5px #EBFF00;
+    background-color:#304151;
+}
+
+.alternative {
+    color: #EBFF00;
+    text-decoration: none;
+    margin-left: 255px;
+    transition: color 300ms;
+}
+
+.alternative:hover {
+    color: #FBD5FC;
+    text-decoration: line-through;
+}
+
+.alternative-to-home {
+    color: #EBFF00;
+    text-decoration: none;
+    margin-left: 210px;
+    line-height: 3;
+    transition: color 300ms;
+}
+
+.alternative-to-home:hover {
+    color: #FBD5FC;
+    text-decoration: line-through;
+}
+
+/* message */
+.message-login {
+    color: red;
+    font-size: 18px;
+    text-shadow: 0 0 5px rgb(255, 107, 107);
+    text-align: center;
+}
